@@ -1,36 +1,31 @@
 import React from 'react';
 
 function OrgBoard({ data, inputValue }) {
-  //   const [filteredData, setFilteredData] = useState([]);
-
   const filterData = data.filter((value) => {
     const twoLangCityNames =
       value.city.toLowerCase().includes(inputValue.toLowerCase()) ||
       value.cityPl.toLowerCase().includes(inputValue.toLowerCase());
     return twoLangCityNames;
-    // if (inputValue === '') {
-    //   setFilteredData([]);
-    // } else {
-    //   setFilteredData(filterData);
-    // }
   });
 
   const showOrgs = filterData.map((org) => {
     return (
-      <li key={org.id}>
-        <h1>{org.orgName}</h1>
-        <h2>{org.email}</h2>
-        <h2>{org.phone}</h2>
+      <li key={org.id} className='org-list__org-item org-item'>
+        <h3 className='org-item__content org-item__org-name'>{org.orgName}</h3>
+        <p className='org-item__content org-item__org-adress'>{org.adress}</p>
+        <p className='org-item__content org-item__org-email'>{org.email}</p>
+        <p className='org-item__content org-item__org-phone'>{org.phone}</p>
+        <p className='org-item__content org-item__org-coordinator'>
+          {org.coordinator}
+        </p>
       </li>
     );
   });
 
-  const sortedOrgs = showOrgs.sort((a, b) => b - a);
-
   return (
-    <>
-      <ul>{sortedOrgs}</ul>
-    </>
+    <main className='org-board'>
+      <ul className='org-board__org-list org-list'>{showOrgs}</ul>
+    </main>
   );
 }
 

@@ -11,18 +11,19 @@ function SearchBar({ inputValue, setInputValue }) {
   const findByCity = (e) => {
     e.preventDefault();
     let updatedInputValue = setInputValue(inputValue);
-    // e.target.city.value = '';
     return updatedInputValue;
   };
 
   return (
-    <section>
-      <form onSubmit={findByCity}>
+    <section className='search-bar'>
+      <form onSubmit={findByCity} className='search-bar__form form'>
         <input
           type='text'
           name='city'
           value={inputValue}
           onChange={handleChange}
+          className='form__input'
+          placeholder='search by city'
         />
       </form>
     </section>

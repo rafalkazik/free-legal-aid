@@ -16,9 +16,9 @@ const firebaseConfig = {
   authDomain: 'ua-legal-aid.firebaseapp.com',
   projectId: 'ua-legal-aid',
   storageBucket: 'ua-legal-aid.appspot.com',
-  messagingSenderId: '195769234751',
-  appId: '1:195769234751:web:af4d537b447f159caacf8a',
-  measurementId: 'G-VEVL66NFKW',
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);

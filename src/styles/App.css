@@ -16,6 +16,9 @@
 }
 
 .App__top::after {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-image: url('../../public/lawBg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +49,9 @@
     background-image: none;
   }
   .App__top::before {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-image: url('../../public/lawBg-big.jpg');
     background-position: 100% 30%;
     background-repeat: no-repeat;

@@ -40,3 +40,24 @@
   align-items: center;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .App__top::after {
+    background-image: none;
+  }
+  .App__top::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/lawBg-big.jpg');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: 100% 30%;
+    opacity: 0.08;
+    z-index: -1;
+    box-shadow: 0 0 700px var(--boxColor) inset;
+  }
+}

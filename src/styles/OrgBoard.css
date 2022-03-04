@@ -1,32 +1,32 @@
 .org-board__org-list {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   list-style: none;
   margin-bottom: 4rem;
 }
 
 .org-list__org-item {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
-  margin-bottom: 1rem;
-  padding: 2rem 1.5rem;
   background-color: var(--listItemBacgroundColor);
   border-radius: 6px;
+  border: 1px solid black;
   border: 1px solid var(--listItemBorderColor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 1rem;
+  max-width: 1000px;
+  padding: 2rem 1.5rem;
   transition: 0.15s ease-in-out;
+  width: 100%;
 }
 
 .org-list__org-item:hover {
-  transform: scale(1.01);
   background-color: var(--mainBackgroundColor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
 }
 
 .org-board {
@@ -38,9 +38,9 @@
 }
 
 .org-item__header-wrapper {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .org-item__org-name {
@@ -48,15 +48,14 @@
 }
 
 .org-item__city-content {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  /* height: 100%; */
-  margin-top: 1rem;
   background-color: var(--cityBoxColor);
-  color: var(--boxColor);
-  padding: 0.5rem;
   border-radius: 5px;
+  color: var(--boxColor);
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
 }
 
 .city-content__icon {
@@ -68,9 +67,9 @@
 }
 
 .city-content__icon {
+  align-items: center;
   display: flex;
   height: 100%;
-  align-items: center;
 }
 
 .city-name__text {
@@ -91,8 +90,8 @@
 }
 
 .org-item__org-name-text {
-  font-size: 1.8rem;
   color: var(--mainFontColor);
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
@@ -110,55 +109,49 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .org-list__org-item {
     padding: 5rem 4rem;
   }
   .org-item__header-wrapper {
-    width: 100%;
-    height: 100%;
+    align-items: center;
     display: grid;
-    grid-template-columns: 80% 20%;
     grid-template-areas: 'orgName city';
+    grid-template-columns: 80% 20%;
+    height: 100%;
     justify-items: start;
     margin-bottom: 5rem;
-    align-items: center;
+    width: 100%;
   }
-
   .org-item__org-name {
-    text-align: start;
     grid-area: orgName;
+    text-align: start;
   }
-
   .org-item__city-content {
-    margin: 0;
     align-self: center;
-    justify-self: end;
     grid-area: city;
+    justify-self: end;
+    margin: 0;
   }
   .org-item__org-data-content {
-    width: 100%;
     display: grid;
+    grid-template-areas: 'adress email phone coordinator';
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1fr);
-    grid-template-areas: 'adress email phone coordinator';
+    width: 100%;
   }
   .org-data-content-wrapper__adress {
     grid-area: adress;
   }
-
   .org-data-content-wrapper__email {
     grid-area: email;
   }
-
   .org-data-content-wrapper__phone {
     grid-area: phone;
   }
-
   .org-data-content-wrapper__coordinator {
     grid-area: coordinator;
   }
-
   .org-item__org-name-text {
     font-size: 2.2rem;
   }

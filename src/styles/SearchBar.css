@@ -1,13 +1,13 @@
 .form__wrapper {
-  display: flex;
   align-items: center;
-  height: 100%;
   background-color: var(--searchBarBackgroundColor);
-  margin: 1rem 0 5rem 0;
-  width: 70vw;
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: 100%;
+  margin: 1rem 0 5rem 0;
   max-width: 500px;
+  width: 70vw;
 }
 
 .form__input {
@@ -15,14 +15,14 @@
   border: none;
   color: var(--mainFontColor);
   font-size: 1.4rem;
-  width: 100%;
   padding: 15px 10px;
+  width: 100%;
 }
 
 .form__input::placeholder {
   color: var(--lighterFontColor);
-  opacity: 0.9;
   font-family: 'Poppins', sans-serif;
+  opacity: 0.9;
 }
 
 .form__input:focus {
@@ -30,8 +30,8 @@
 }
 
 .form__icon {
-  display: flex;
   color: var(--lighterFontColor);
+  display: flex;
   margin: 0 1rem 0 1.5rem;
   transform: scale(1.2);
 }

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/free-legal-aid/static/css/main.8a6c1123.css",
+    "main.js": "/free-legal-aid/static/js/main.b2453772.js",
+    "static/js/787.41ddaa20.chunk.js": "/free-legal-aid/static/js/787.41ddaa20.chunk.js",
+    "static/media/lawBg-big.jpg": "/free-legal-aid/static/media/lawBg-big.e8031fd7f4e49782a248.jpg",
+    "static/media/lawBg.jpg": "/free-legal-aid/static/media/lawBg.f0da35e71f7e1e456291.jpg",
+    "index.html": "/free-legal-aid/index.html",
+    "main.8a6c1123.css.map": "/free-legal-aid/static/css/main.8a6c1123.css.map",
+    "main.b2453772.js.map": "/free-legal-aid/static/js/main.b2453772.js.map",
+    "787.41ddaa20.chunk.js.map": "/free-legal-aid/static/js/787.41ddaa20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a6c1123.css",
+    "static/js/main.b2453772.js"
+  ]
+}

@@ -1,0 +1,30 @@
+:root {
+  --boxColor: #2254b8;
+  --cityBoxColor: #b5ceff;
+  --mainFontColor: #212121;
+  --lighterFontColor: #686868;
+  --headerFontColor: #fafafa;
+  --mainBackgroundColor: #fafafa;
+  --searchBarBackgroundColor: #fafafa;
+  --listItemBacgroundColor: #ffffff;
+  --listItemBorderColor: #e3e3e3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: var(--mainBackgroundColor);
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: var(--mainFontColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

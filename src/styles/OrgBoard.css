@@ -1,0 +1,94 @@
+.org-board__org-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.org-list__org-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.org-board {
+  width: 90%;
+}
+
+.org-board__org-list {
+  width: 100%;
+}
+
+.org-list__org-item {
+  padding: 2rem 1.5rem;
+  background-color: var(--listItemBacgroundColor);
+  border-radius: 6px;
+  border: 1px solid var(--listItemBorderColor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  transition: 0.2s ease-in-out;
+}
+
+.org-list__org-item:hover {
+  transform: scale(1.01);
+  background-color: var(--mainBackgroundColor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.org-item__org-name {
+  text-align: center;
+}
+
+.org-item__city-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.city-content__icon {
+  align-self: center;
+}
+
+.city-content__city-name {
+  margin-left: 0.2rem;
+}
+
+.org-item__city-content {
+  background-color: var(--cityBoxColor);
+  color: var(--boxColor);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.city-content__icon {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.city-name__text {
+  font-size: 1.3rem;
+}
+
+.org-item__org-data-content {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.org-item__content--title {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+.org-item__content {
+  color: var(--lighterFontColor);
+}
+
+.org-item__org-name-text {
+  font-size: 1.8rem;
+  color: var(--mainFontColor);
+}

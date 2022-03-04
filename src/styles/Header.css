@@ -1,0 +1,19 @@
+.header {
+  text-align: center;
+  width: 80%;
+  color: var(--headerFontColor);
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  font-size: 1.4em;
+  z-index: 1;
+}

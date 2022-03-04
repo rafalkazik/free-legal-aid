@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from './firebase-config';
 import { collection, getDocs } from 'firebase/firestore';
-import './App.css';
+import './styles/App.css';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import OrgBoard from './components/OrgBoard';
@@ -21,13 +21,17 @@ function App() {
 
   return (
     <section className='App'>
-      <Header />
-      <SearchBar
-        data={orgs}
-        inputValue={inputValue}
-        setInputValue={setInputValue}
-      />
-      <OrgBoard data={orgs} inputValue={inputValue} />
+      <div className='App__top'>
+        <Header />
+        <SearchBar
+          data={orgs}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+        />
+      </div>
+      <div className='App__board'>
+        <OrgBoard data={orgs} inputValue={inputValue} />
+      </div>
     </section>
   );
 }

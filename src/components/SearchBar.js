@@ -1,4 +1,6 @@
 import React from 'react';
+import SearchIcon from '@mui/icons-material/Search';
+import '../styles/SearchBar.css';
 
 function SearchBar({ inputValue, setInputValue }) {
   const handleChange = (e) => {
@@ -17,14 +19,19 @@ function SearchBar({ inputValue, setInputValue }) {
   return (
     <section className='search-bar'>
       <form onSubmit={findByCity} className='search-bar__form form'>
-        <input
-          type='text'
-          name='city'
-          value={inputValue}
-          onChange={handleChange}
-          className='form__input'
-          placeholder='search by city'
-        />
+        <div className='form__wrapper'>
+          <div className='form__icon'>
+            <SearchIcon />
+          </div>
+          <input
+            type='text'
+            name='city'
+            value={inputValue}
+            onChange={handleChange}
+            className='form__input'
+            placeholder='search by city'
+          />
+        </div>
       </form>
     </section>
   );

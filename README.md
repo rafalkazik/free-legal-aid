@@ -6,6 +6,8 @@ Technologies and metodologies used in this project:
 
 **React.js / CSS / BEM / RWD / Firebase**
 
+Check live version: **[Live](https://rafalkazik.github.io/free-legal-aid/)**
+
 ## :gear: Installation
 
 The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). To run the app on your device you should install all dependencies. Then create a localhost port and run your web explorer.

@@ -7,6 +7,7 @@ function OrgBoard({ data, inputValue }) {
     const twoLangCityNames =
       value.city.toLowerCase().includes(inputValue.toLowerCase()) ||
       value.cityPl.toLowerCase().includes(inputValue.toLowerCase());
+
     return twoLangCityNames;
   });
 
@@ -19,15 +20,18 @@ function OrgBoard({ data, inputValue }) {
               {org.orgName}
             </h3>
           </div>
+
           <div className='org-item__city-content city-content'>
             <div className='city-content__icon'>
               <LocationOnOutlinedIcon />
             </div>
+
             <div className='city-content__city-name city-name'>
               <p className='city-name__text'>{org.city}</p>
             </div>
           </div>
         </header>
+
         <div className='org-item__org-data-content'>
           <div className='org-data-content-wrapper__adress'>
             <p className='org-item__content--title org-item__org-adress'>
@@ -37,18 +41,21 @@ function OrgBoard({ data, inputValue }) {
               {org.adress}
             </p>
           </div>
+
           <div className='org-data-content-wrapper__email'>
             <p className='org-item__content--title org-item__org-email'>
               email:
             </p>
             <p className='org-item__content org-item__org-email'>{org.email}</p>
           </div>
+
           <div className='org-data-content-wrapper__phone'>
             <p className='org-item__content--title org-item__org-phone'>
               phone:
             </p>
             <p className='org-item__content org-item__org-phone'>{org.phone}</p>
           </div>
+
           <div className='org-data-content-wrapper__coordinator'>
             <p className='org-item__content--title org-item__org-coordinator'>
               coordinator:
